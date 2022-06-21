@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -11,24 +17,33 @@
     <title>Color Flipper</title>
   </head>
   <body>
-    <nav>
+    <!-- Navbar -->
+    <nav class="nav">
       <div class="nav-center">
-        <h4>color flipper</h4>
-        <ul class="nav-links">
-          <li>
-            <a href="./index.html">simple</a>
+        <a href="./index.html" class="nav__logo">COLOR FLIPPER</a>
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">BASIC</a>
           </li>
-          <li>
-            <a href="./hex.html">hex</a>
+          <li class="nav__item">
+            <a class="nav__link" href="./rgb.html">RGB</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./hex.html">HEX</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./hsl.html">HSL</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <main>
+    <!-- Color Flipper -->
+    <main class="main">
       <div class="container">
-        <h2>background color : <span class="color"> #f1f5f8 </span></h2>
-        <button class="btn btn-hero" id="btn">click me</button>
+        <h2>Color : <span class="color__code"> #ffa500 </span></h2>
+        <button class="btn" id="btn">CLICK ME</button>
       </div>
     </main>
 

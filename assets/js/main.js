@@ -1,14 +1,17 @@
-const colors = ["green", "red", "rgba(133, 122, 200)", "#f15025"];
-
+const basicColors = ["Red", "Yellow", "Blue", "Orange", "Green", "Violet"];
 const btn = document.getElementById("btn");
-const color = document.querySelector(".color");
+const heading = document.querySelector('.heading')
+const colorCode = document.querySelector(".color__code");
 
 btn.addEventListener("click", function () {
   const randomNumber = getRandomNumber();
-  document.body.style.backgroundColor = colors[randomNumber]
-  color.textContent = colors[randomNumber]
+  // Change body background 
+  document.body.style.backgroundColor = basicColors[randomNumber];
+  // Change color code text 
+  colorCode.innerText = basicColors[randomNumber];
 });
 
+// Function to get a random number from 'basicColors' length
 function getRandomNumber() {
-    return Math.floor(Math.random() * colors.length)
+  return Math.floor(Math.random() * basicColors.length);
 }
