@@ -1,5 +1,5 @@
 # Color Flipper
-## To Experience Live Demo [Click Here](https://md-mussanna-bin-sharif.github.io/color-flipper/)
+## [Live Demo](https://mahin-codes.github.io/color-flipper/)
 ### Color Generator Website
 - Crafted Using HTML, CSS & JavaScript.
 - Basic, RGB, HEX & HSL color mode available.
